@@ -1,0 +1,7 @@
+D:\User\2i\Курганський\ООП\lab3\lab3\bin\Debug\lab3.exe
+D:\User\2i\Курганський\ООП\lab3\lab3\bin\Debug\lab3.pdb
+D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.Form1.resources
+D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.Properties.Resources.resources
+D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.csproj.GenerateResource.Cache
+D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.exe
+D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.pdb
