@@ -13,7 +13,7 @@ namespace lab3
         public MyComplex() { new MyComplex(0, 0); }
         protected MyComplex(MyComplex a) { new MyComplex(a.Re, a.Im); }
         public MyComplex(double a) { new MyComplex(a, 0); }
-        
+        public MyComplex(string s){ FromStr(s); }
         public static MyComplex operator +(MyComplex a, MyComplex b)
         {                       
             return new MyComplex(a.Re + b.Re, a.Im + b.Im);
@@ -70,6 +70,22 @@ namespace lab3
             if (a.abs() != b.abs()) return true;
             return false;
         }
-        
+        private MyComplex FromStr(string s)
+        {
+            double a = 0, b;
+            string s1 = "";
+            foreach (char ch in s)
+            {
+                if (ch == '+')
+                {
+                    a = Convert.ToDouble(s1);
+                    s1 = "";
+                }
+                if (ch == 'i' || ch == '*') s1 = "";
+                s1 += ch;
+            }
+            b = Convert.ToDouble(s1);
+            return new MyComplex(a, b);
+        }
     }
 }
