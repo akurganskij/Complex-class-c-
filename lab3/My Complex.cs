@@ -11,9 +11,9 @@ namespace lab3
         public double Re, Im;
         public MyComplex(double a, double b) { Re = a; Im = b; }
         public MyComplex() { new MyComplex(0, 0); }
-        protected MyComplex(MyComplex a) { new MyComplex(a.Re, a.Im); }
+        public MyComplex(MyComplex a) { this.Re = a.Re; this.Im = a.Im; }
         public MyComplex(double a) { new MyComplex(a, 0); }
-        public MyComplex(string s){ FromStr(s); }
+        public MyComplex(string s){ MyComplex t = new MyComplex(); t = FromStr(s); this.Re = t.Re; this.Im = t.Im; }
         public static MyComplex operator +(MyComplex a, MyComplex b)
         {                       
             return new MyComplex(a.Re + b.Re, a.Im + b.Im);
@@ -74,15 +74,20 @@ namespace lab3
         {
             double a = 0, b;
             string s1 = "";
-            foreach (char ch in s)
+            int i = 0;
+            while(s[i] != '+')
             {
-                if (ch == '+')
-                {
-                    a = Convert.ToDouble(s1);
-                    s1 = "";
-                }
-                if (ch == 'i' || ch == '*') s1 = "";
-                s1 += ch;
+                s1 += s[i];
+                ++i;
+            }
+            a = Convert.ToDouble(s1);
+            while (s[i] != '*') ++i;
+            ++i;
+            s1 = "";
+            while(i < s.Length)
+            {
+                s1 += s[i];
+                ++i;
             }
             b = Convert.ToDouble(s1);
             return new MyComplex(a, b);
