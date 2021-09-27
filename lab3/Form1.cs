@@ -19,7 +19,6 @@ namespace lab3
         private void button1_Click(object sender, EventArgs e)
         {
             double a1 = 0, a2 = 0, b1 = 0, b2 = 0;
-            bool correct = true;
             if (textBox1.Text != "") a1 = Convert.ToDouble(textBox1.Text);
             if (textBox2.Text != "") a2 = Convert.ToDouble(textBox2.Text);
             if (textBox3.Text != "") b1 = Convert.ToDouble(textBox3.Text);
@@ -29,15 +28,61 @@ namespace lab3
             MyComplex b = new MyComplex(b1, b2);
             string oper = comboBox1.Text;
             MyComplex c = new MyComplex();
-            if(oper == "+") c = a + b;
-            else if (oper == "-") c = a - b;
-            else if (oper == "*") c = a * b;
+            bool d = true;
+            if (oper == "+")
+            {
+                c = a + b;
+                label6.Text = c.ToString();
+            }
+            else if (oper == "-")
+            {
+                c = a - b;
+                label6.Text = c.ToString();
+            }
+            else if (oper == "*")
+            {
+                c = a * b;
+                label6.Text = c.ToString();
+            }
+            else if (oper == "/")
+            {
+                c = a / b;
+                label6.Text = c.ToString();
+            }
+            else if (oper == "==")
+            {
+                d = a == b;
+                label6.Text = d.ToString();
+            }
+            else if (oper == ">")
+            {
+                d = a > b;
+                label6.Text = d.ToString();
+            }
+            else if (oper == "<")
+            {
+                d = a < b;
+                label6.Text = d.ToString();
+            }
+            else if (oper == ">=")
+            {
+                d = a >= b;
+                label6.Text = d.ToString();
+            }
+            else if (oper == "<=")
+            {
+                d = a <= b;
+                label6.Text = d.ToString();
+            }
+            else if (oper == "!=")
+            {
+                d = a != b;
+                label6.Text = d.ToString();
+            }
             else
             {
                 label6.Text = "Uncorret operator";
-                correct = false;
             }
-            if(correct)label6.Text = c.print();
 
         }
     }

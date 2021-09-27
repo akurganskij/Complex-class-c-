@@ -5,3 +5,12 @@ D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.Properties
 D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.csproj.GenerateResource.Cache
 D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.exe
 D:\User\2i\Курганський\ООП\lab3\lab3\obj\x86\Debug\lab3.pdb
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\bin\Debug\lab3.exe
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\bin\Debug\lab3.pdb
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.csproj.AssemblyReference.cache
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.Form1.resources
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.Properties.Resources.resources
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.csproj.GenerateResource.cache
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.csproj.CoreCompileInputs.cache
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.exe
+C:\Users\Andrey Kurganskij\Source\Repos\akurganskij\Complex-class-c-\lab3\obj\x86\Debug\lab3.pdb
