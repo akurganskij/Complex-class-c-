@@ -47,7 +47,7 @@ namespace lab3
         }
         public static bool operator <=(MyComplex a, MyComplex b)
         {
-            if (a.abs() < b.abs()) return true;
+            if (a.abs() <= b.abs()) return true;
             return false;
         }
         public static bool operator >(MyComplex a, MyComplex b)
